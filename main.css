@@ -1,0 +1,234 @@
+/******** Coded for Mobile First ********/
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+html {
+	background-color: #fff;
+	font-size: 16px;
+	margin: 0;
+	width: 100%;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+	margin: 0;
+	padding: 1.25em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	padding: 1.25em;
+	max-width: 1200px;
+	width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-left: 0;
+}
+h1 {
+	font-size: 1.4em;
+}
+h2 {
+    font-size: 1.1em;
+}
+h3 {
+	font-size: 1em;
+}
+h4 {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 0.8em;
+	line-height: 1.25px;
+	padding: 0;
+	text-align: justify;
+}
+
+/*The widths are in a percentage!*/
+header {
+	align-items: center;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+nav {
+
+	color: #77a466;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: column wrap;
+	margin: 30px 20px;
+}
+
+ nav ul {
+	margin: 0;
+	padding: 0;
+ }
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.8em;
+	padding: 8px;
+	display: flex;
+	justify-items: center;
+	align-content: center; 
+	flex: column wrap;
+	color:#77a466;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section, .bottom-section {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.main-image img {
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	width: 100%;
+}
+
+.main-title {
+	font-size: 0.9em;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.main-title h3 {
+	text-align: left;
+	color: #77a466;
+}
+
+.main-title p {
+	margin: 0 auto;
+	font-size: 1em;
+	line-height: 25px;
+	width: inherit;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: auto;
+	border-top: 1px solid #eee;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*.section-one h4 {
+	margin: 0 auto;
+}*/
+
+.section-two {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+/*.section-two h4,
+.section-three h4 {
+	margin: 0 auto;
+}*/
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+	padding: 0;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding: 0;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	font-size: 0.8em;
+	border-top: 3px solid #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.8em;
+}
+
+@media all and (min-width: 768px) {
+	/********Tablet Styles Here********/
+	.bottom-section {
+
+	}
+	.section-one {
+
+	}
+    .section-two {
+
+	}
+	.section-three {
+		
+	}
+}
+
+
+
+@media all and (min-width: 1200px) {
+	/********Desktop Styles Here********/
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}
