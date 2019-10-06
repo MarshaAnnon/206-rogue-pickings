@@ -6,16 +6,12 @@
 html {
 	background-color: #fff;
 	font-size: 16px;
-	height: 100%;
-	width: 100%;
 }
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 1em;
-	height: 100%;
-	padding: 1.25em;
-	width: 100%;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -25,8 +21,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	padding: 1.25em;
-	width: 100%;
+	max-width: 1200px;
+	width: 90%;
 }
 
 h1,
@@ -36,13 +32,12 @@ h4 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding-left: 15px;
 }
 h1 {
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 h3 {
 	font-size: 1em;
@@ -54,84 +49,83 @@ h4 {
 p {
 	font-size: 0.8em;
 	line-height: 1.25px;
-	padding: 0 15px;
 	text-align: justify;
 }
 
 /*The widths are in a percentage!*/
+
+
 header {
-	align-items: center;
-	border-bottom: 3px solid #77a466;
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	height: 100%;
+	flex-flow: row wrap;
+	text-align: center;
 	width: 100%;
+}
+header h1 {
+    font-size: 1.875em;
+	
+    padding: 38px 20px 20px 20px; 
+    border-bottom: 3px solid #77a466; 
+    width: 100%;
 }
 
 header h1 span {
 	color: #77a466;
 }
 
-nav {
-
-	color: #77a466;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: column wrap;
-	margin: 30px 20px;
+header nav {
+	padding: 15px 0; 
+    width: 100%; 	
 }
 
- nav ul {
+header nav ul {
 	margin: 0;
 	padding: 0;
  }
 
-nav ul li {
+header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.8em;
-	padding: 8px;
-	display: flex;
-	justify-items: center;
-	align-content: center; 
-	flex: column wrap;
+	list-style: none;
+	padding: 8px 0;
 	color:#77a466;
 }
 
-nav ul li a{
+header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
 }
 
 /*The widths are in a percentage!*/
 .top-section, .bottom-section {
-	margin: 0 auto;
-	width: 100%;
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: wrap;
 }
 
 .main-image {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .main-image img {
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
-	height: 100%;
 	width: 100%;
-	margin: 0 auto;
-	margin-left: 30px;
-	max-width: 100%;
 }
 
 .main-title {
 	font-size: 0.9em;
-	height: auto;
-	margin: 20px 20px 10px 20px;
+	margin: 0 auto;
+	margin-top: 10px;
 	width: 100%;
 }
 
@@ -141,7 +135,7 @@ nav ul li a{
 }
 
 .main-title p {
-	padding: 0px 15px;
+	margin: 0 auto;
 	font-size: 1em;
 	line-height: 25px;
 	width: inherit;
@@ -150,33 +144,31 @@ nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: auto;
-	height: auto;
+	width: 100%;
 	border-top: 1px solid #eee;
-	padding: 15px;
 }
 
-.section-one h4 {
-	padding: 15px;
-}
+/*.section-one h4 {
+	margin: 0 auto;
+}*/
 
 .section-two {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
 
-.section-two h4,
+/*.section-two h4,
 .section-three h4 {
-	padding: 15px;
-}
+	margin: 0 auto;
+}*/
 
 .menu {
 	list-style: none;
-	padding: 15px;
+	padding: 0;
 }
 .menu li {
-	padding: 15px;
 	color:#77a466;
+	padding: 10px 0;
 }
 
 .reviews {
@@ -197,9 +189,10 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 50px;
-	margin: 0 auto;
+	flex-flow: row wrap;
+	text-align: center;
 }
+
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
@@ -208,9 +201,64 @@ footer span {
 }
 
 @media all and (min-width: 768px) {
+	/********Tablet Styles Here********/
 
+	/*header {
+		border-bottom: none;
+		display: flex;
+		justify-content: flex-start;
+	}
+	
+	nav ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		justify-content: space-between;
+		font-size: 0.8em;
+	}
+	*/
+	.bottom-section {
+		align-items: flex-start;
+		justify-content: space-between;
+		border-top: 1px solid #eee;
+		margin-top: 15px;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
 }
 
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 0 20px;
+}
+}
+
+
+
 @media all and (min-width: 1200px) {
-	
+	/********Desktop Styles Here********/
+	header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        padding: 0;
+        border-bottom: none;
+        text-align: left;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
